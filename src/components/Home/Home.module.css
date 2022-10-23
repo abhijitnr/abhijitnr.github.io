@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.font {
+  font-family: "Poppins", sans-serif;
+}
+
+.profilePicture {
+  background-image: url(../../Assets/abhijit-biswas.png);
+  height: 96%;
+  width: 92%;
+  border-radius: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  transition: transform 3s linear;
+}
+.profilePicture:hover {
+  transform: scale(1.1);
+  transition: 1s ease-in;
+  transition: transform 3s linear;
+}

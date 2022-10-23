@@ -1,0 +1,46 @@
+.Heading {
+  margin: auto;
+  width: 18%;
+  border-bottom: 4px solid #dc143c;
+}
+.SubHead {
+  width: 22%;
+  border-bottom: 4px solid #dc143c;
+}
+.TabSubHead {
+  width: 42%;
+  border-bottom: 4px solid #dc143c;
+}
+.MoBSubHead {
+  width: 55%;
+  border-bottom: 4px solid #dc143c;
+}
+.MobHeading {
+  margin: auto;
+  width: 50%;
+  border-bottom: 4px solid #dc143c;
+}
+.TabHeading {
+  margin: auto;
+  width: 45%;
+  border-bottom: 4px solid #dc143c;
+}
+.boxes {
+  transition: transform 0.5s linear;
+}
+.boxes:hover {
+  transform: scale(1.1);
+
+  transition: 0.5s ease-in;
+}
+.Text {
+  margin: auto;
+  width: 10%;
+  border-bottom: 4px solid #dc143c;
+}
+.box:hover {
+  background-color: #1d3866;
+}
+.box1:hover {
+  background-color: #c1c3c5;
+}

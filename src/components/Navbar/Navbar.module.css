@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap");
+
+.mobile {
+  height: 5rem;
+  display: flex;
+  position: fixed;
+  width: 95%;
+  overflow: hidden;
+  top: 0;
+  font-family: "poppins";
+}
+
+.tab {
+  height: 5rem;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  top: 0;
+  font-family: "poppins";
+}
+.active {
+  color: #dc143c;
+  border-bottom: 3px solid #dc143c;
+}
+
+.logo_Black {
+  font-family: "Poppins", sans-serif;
+  color: black;
+}
+
+.logo_Pink {
+  font-family: "Poppins", sans-serif;
+  color: #dc143c;
+}
+
+.logo_White {
+  font-family: "Poppins", sans-serif;
+  color: white;
+}

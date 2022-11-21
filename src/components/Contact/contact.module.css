@@ -1,68 +1,55 @@
-.img{
-    background-image: url(../../Assets/contact.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 30em;
-    width: 30em;
-    max-width: 100%;
-    z-index: 0;
-    /* border-radius: 50%; */
-    /* background-image: url(/static/media/profilephoto.d2abca52.jpg); */
-    /* background-size: cover;
+.img {
+  background-image: url(../../Assets/contact.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 30em;
+  width: 30em;
+  max-width: 100%;
+  z-index: 0;
+  /* border-radius: 50%; */
+  /* background-image: url(/static/media/profilephoto.d2abca52.jpg); */
+  /* background-size: cover;
     background-repeat: no-repeat; */
 }
-.texts{
-    transition: transform 0.5s linear;
+.texts {
+  transition: transform 0.5s linear;
 }
-.texts:hover{
-color:  #dc143c;
-transform: scale(1.1);
+.texts:hover {
+  color: #dc143c;
+  transform: scale(1.1);
 
-    transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
 }
-.Heading{
-    margin: auto;
-    width: 52%;
-    border-bottom: 4px solid #dc143c;
-}
-.TabHeading{
-    margin: auto;
-    width: 75%;
-    border-bottom: 4px solid #dc143c;
-/* font-size: 10px; */
-}
-.MobHeading{
+.Heading {
   margin: auto;
-    width: 85%;
-    border-bottom: 4px solid #dc143c;
-
+  width: 52%;
+  border-bottom: 4px solid #dc143c;
 }
-/* 
-
-.inputSec input[type="text"]{
-    height: 50px;
-    border-radius: 8px;
-    padding-left: 10px;
-    background-color:white;
-    color: red;
-    width: 100%;
-    margin-top: 20px;
-    border: 3px solid black;
-} */
-
-.form{
-    margin-top: 20px;
-    width: 50%;
+.TabHeading {
+  margin: auto;
+  width: 75%;
+  border-bottom: 4px solid #dc143c;
+  /* font-size: 10px; */
 }
-.iconBox:hover{
-    padding: 10px;
-    border-radius: 8px;
-    background-color: #dc143c;
-    color: white;
+.MobHeading {
+  margin: auto;
+  width: 85%;
+  border-bottom: 4px solid #dc143c;
 }
-.iconBox{
-    padding: 10px;
-    /* border-radius: 8px;
+
+.form {
+  margin-top: 20px;
+  width: 50%;
+}
+.iconBox:hover {
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #dc143c;
+  color: white;
+}
+.iconBox {
+  padding: 10px;
+  /* border-radius: 8px;
     background-color: #dc143c;
     color: white; */
 }

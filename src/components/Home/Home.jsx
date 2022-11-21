@@ -19,6 +19,7 @@ import { Contact } from "../Contact/Contact";
 import { useMediaQuery } from "react-responsive";
 import { TechStack } from "../Tech Stack/TechStack";
 import { GithubCalender } from "../GitCalender/GithubCalender";
+import GitStats from "../GitStats/GitStats";
 
 const Desktop = ({ children }) => {
   const isDesktop = useMediaQuery({ minWidth: 1008 });
@@ -127,10 +128,10 @@ export const Home = ({ props }) => {
         </Box>
         <Box className={styles.line}></Box>
 
-        <Box height="1300px" ref={about}>
+        <Box height="1500px" ref={about}>
           <About />
-
           <GithubCalender />
+          <GitStats />
         </Box>
         <Box ref={work}>
           <Work />
@@ -235,6 +236,7 @@ export const Home = ({ props }) => {
         <Box h="auto" ref={about}>
           <About />
           <GithubCalender />
+          <GitStats />
         </Box>
 
         <Box h="auto" ref={work}>
@@ -339,6 +341,7 @@ export const Home = ({ props }) => {
         <Box h="auto" ref={about}>
           <About />
           <GithubCalender />
+          <GitStats />
         </Box>
 
         <Box h="auto" ref={work}>

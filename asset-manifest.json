@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.c6193b58.css",
-    "main.js": "/static/js/main.94f31553.js",
+    "main.js": "/static/js/main.10bedd8c.js",
     "static/media/mini-youtube.PNG": "/static/media/mini-youtube.7517a7a744e6adc3d650.PNG",
     "static/media/kindmeal-clone.PNG": "/static/media/kindmeal-clone.abf67b785f86300cf982.PNG",
     "static/media/ssense-clone.PNG": "/static/media/ssense-clone.5865832e8fd652ac61bc.PNG",
@@ -32,10 +32,10 @@
     "static/media/css.svg": "/static/media/css.afb434f6d712d3e4ff53be8da4d9876a.svg",
     "static/media/html.svg": "/static/media/html.75bdf0b057c088503944680032ea6347.svg",
     "main.c6193b58.css.map": "/static/css/main.c6193b58.css.map",
-    "main.94f31553.js.map": "/static/js/main.94f31553.js.map"
+    "main.10bedd8c.js.map": "/static/js/main.10bedd8c.js.map"
   },
   "entrypoints": [
     "static/css/main.c6193b58.css",
-    "static/js/main.94f31553.js"
+    "static/js/main.10bedd8c.js"
   ]
 }

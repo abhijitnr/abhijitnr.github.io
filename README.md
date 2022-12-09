@@ -29,20 +29,20 @@
 
 ## Dark mode
 
-![dark-mode](dark-mode.PNG)
+![dark-mode](https://raw.githubusercontent.com/abhijitnr/abhijitnr.github.io/master/dark-mode.PNG)
 
 ## Light mode
 
-![light-mode](light-mode.PNG)
+![light-mode](https://raw.githubusercontent.com/abhijitnr/abhijitnr.github.io/master/light-mode.PNG)
 
 ## Desktop mode
 
-![desktop-mode](desktop-mode.PNG)
+![desktop-mode](https://raw.githubusercontent.com/abhijitnr/abhijitnr.github.io/master/desktop-mode.PNG)
 
 ## Tablet mode
 
-![teblet-mode](teblet-mode.PNG)
+![teblet-mode](https://raw.githubusercontent.com/abhijitnr/abhijitnr.github.io/master/teblet-mode.PNG)
 
 ## Mobile mode
 
-![mobile-mode](mobile-mode.PNG)
+![mobile-mode](https://raw.githubusercontent.com/abhijitnr/abhijitnr.github.io/master/mobile-mode.PNG)

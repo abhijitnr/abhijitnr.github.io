@@ -63,14 +63,14 @@ export const GithubCalender = () => {
                   {" "}
                   <Flex className={styles.texts} alignItems="center">
                     <AiOutlineFundProjectionScreen size="30px" />{" "}
-                    <Text ml={3}>12+ Projects</Text>
+                    <Text ml={3}>5+ Projects</Text>
                   </Flex>
                   <Flex className={styles.texts} mt={5} alignItems="center">
                     <VscGraph size="30px" />{" "}
-                    <Text ml={3}>70+ Mini Projects</Text>
+                    <Text ml={3}>10+ Mini Projects</Text>
                   </Flex>
                   <Flex className={styles.texts} mt={5} alignItems="center">
-                    <FaGit size="30px" /> <Text ml={3}>136+ Git Commits</Text>
+                    <FaGit size="30px" /> <Text ml={3}>500+ Git Commits</Text>
                   </Flex>
                 </Box>
               </Flex>
@@ -120,14 +120,14 @@ export const GithubCalender = () => {
                 <Box>
                   <Flex className={styles.texts} alignItems="center">
                     <AiOutlineFundProjectionScreen size="30px" />
-                    <Text ml={3}>12+ Projects</Text>
+                    <Text ml={3}>5+ Projects</Text>
                   </Flex>
                   <Flex className={styles.texts} mt={5} alignItems="center">
                     <VscGraph size="30px" />
-                    <Text ml={3}>70+ Mini Projects</Text>
+                    <Text ml={3}>10+ Mini Projects</Text>
                   </Flex>
                   <Flex className={styles.texts} mt={5} alignItems="center">
-                    <FaGit size="30px" /> <Text ml={3}>136+ Git Commits</Text>
+                    <FaGit size="30px" /> <Text ml={3}>500+ Git Commits</Text>
                   </Flex>
                 </Box>
               </Flex>
@@ -185,19 +185,19 @@ export const GithubCalender = () => {
                   <Flex className={styles.texts} alignItems="center">
                     <AiOutlineFundProjectionScreen size="15px" />
                     <Text fontSize="12px" ml={2}>
-                      12+ Projects
+                      5+ Projects
                     </Text>
                   </Flex>
                   <Flex className={styles.texts} mt={5} alignItems="center">
                     <VscGraph size="15px" />
                     <Text fontSize="12px" ml={2}>
-                      70+ Mini Projects
+                      10+ Mini Projects
                     </Text>
                   </Flex>
                   <Flex className={styles.texts} mt={5} alignItems="center">
                     <FaGit size="15px" />
                     <Text fontSize="12px" ml={2}>
-                      136+ Git Commits
+                      500+ Git Commits
                     </Text>
                   </Flex>
                 </Box>

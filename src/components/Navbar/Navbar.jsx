@@ -153,7 +153,7 @@ const Navbar = ({ props }) => {
                 </Box>
               </Link>
               <Spacer />
-              <Box w="50%">
+              <Box w="60%">
                 <Flex justifyContent="space-evenly">
                   {links.map((link) => (
                     <Heading
@@ -169,10 +169,33 @@ const Navbar = ({ props }) => {
                         color: "white",
                       }}
                     >
-                      {" "}
                       {link.title}
                     </Heading>
                   ))}
+                  <a
+                    href={
+                      "https://drive.google.com/file/d/1jaQwBlpCLWsLddLHTDVFZWS8PvZEeAZG/view?usp=sharing"
+                    }
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <Button
+                      h="40px"
+                      fontFamily="Poppins"
+                      w="100px"
+                      fontSize="16px"
+                      color="white"
+                      bg="#dc143c"
+                      _hover={{
+                        background: "transparent",
+                        color: "#dc143c",
+                        border: "2px solid #dc143c",
+                      }}
+                    >
+                      RESUME
+                    </Button>
+                  </a>
+
                   <Button
                     onClick={toggleColorMode}
                     color={colorMode === "light" ? "#0f1624" : "facebook"}
@@ -364,6 +387,32 @@ const Navbar = ({ props }) => {
                     </Heading>
                   </Center>
                 ))}
+                <Center>
+                  <a
+                    href={
+                      "https://drive.google.com/file/d/1jaQwBlpCLWsLddLHTDVFZWS8PvZEeAZG/view?usp=sharing"
+                    }
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <Button
+                      mt={7}
+                      h="40px"
+                      fontFamily="Poppins"
+                      w="100px"
+                      fontSize="16px"
+                      color="white"
+                      bg="#dc143c"
+                      _hover={{
+                        background: "transparent",
+                        color: "#dc143c",
+                        border: "2px solid #dc143c",
+                      }}
+                    >
+                      RESUME
+                    </Button>
+                  </a>
+                </Center>
               </DrawerBody>
             </DrawerContent>
           </Drawer>
@@ -543,6 +592,33 @@ const Navbar = ({ props }) => {
                     </Heading>
                   </Center>
                 ))}
+
+                <Center>
+                  <a
+                    href={
+                      "https://drive.google.com/file/d/1jaQwBlpCLWsLddLHTDVFZWS8PvZEeAZG/view?usp=sharing"
+                    }
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <Button
+                      mt={7}
+                      h="40px"
+                      fontFamily="Poppins"
+                      w="100px"
+                      fontSize="16px"
+                      color="white"
+                      bg="#dc143c"
+                      _hover={{
+                        background: "transparent",
+                        color: "#dc143c",
+                        border: "2px solid #dc143c",
+                      }}
+                    >
+                      RESUME
+                    </Button>
+                  </a>
+                </Center>
               </DrawerBody>
             </DrawerContent>
           </Drawer>

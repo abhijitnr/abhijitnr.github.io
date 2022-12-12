@@ -23,7 +23,15 @@ function App() {
   return (
     <>
       <Navbar
-        props={{ scrollsection, about, tech, work, contact, home, skills }}
+        props={{
+          scrollsection,
+          about,
+          tech,
+          work,
+          contact,
+          home,
+          skills,
+        }}
       />
       <AllRoutes
         props={{ scrollsection, about, tech, work, contact, home, skills }}

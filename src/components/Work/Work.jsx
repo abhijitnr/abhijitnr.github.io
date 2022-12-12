@@ -17,7 +17,7 @@ import TogglTrack from "../../Assets/projectImg/toggl-clone.PNG";
 import KindMealClone from "../../Assets/projectImg/kindmeal-clone.PNG";
 import MiniYoutube from "../../Assets/projectImg/mini-youtube.PNG";
 import WheatherApp from "../../Assets/projectImg/wheather-app.PNG";
-import StopWatch from "../../Assets/projectImg/stopwatch.PNG";
+import todoApp from "../../Assets/projectImg/todo-app.png";
 import { useMediaQuery } from "react-responsive";
 
 const Desktop = ({ children }) => {
@@ -408,21 +408,22 @@ export const Work = () => {
                   w="300px"
                   borderRadius={5}
                   h="150px"
-                  src={StopWatch}
+                  src={todoApp}
                 ></Image>
                 <Heading mt={3} size="md">
-                  Stop Watch App
+                  ToDo App
                 </Heading>
                 <Box mt={3} textAlign="left">
                   <Text fontSize="15px">
-                    This is a basic stop watch. In this stop watch user can
-                    start, pause, stop and reset the time as per requirement.
+                    This is a fullstack ToDo App. In this ToDo App you can
+                    easily add a new ToDo, update the ToDo and also able to
+                    delete the ToDo.
                   </Text>
                   <Text fontSize="15px" mt={3}>
                     <span style={{ color: "#d60916", fontWeight: "bold" }}>
                       Tech Stack :
                     </span>{" "}
-                    HTML5 | CSS3 | Javascript
+                    MongoDB | ExpressJS | React | NodeJS
                   </Text>
                   <Text fontSize="13px" mt={3}>
                     An Individual project, build in 1 days.
@@ -435,7 +436,7 @@ export const Work = () => {
                             className={styles.SocialIcon}
                             target="_blank"
                             rel="noreferrer"
-                            href="https://github.com/abhijitnr/stop-watch-app"
+                            href="https://github.com/abhijitnr/MERN-STACK-TODO-APP"
                           >
                             <GrGithub size="30px" />
                           </a>
@@ -449,7 +450,7 @@ export const Work = () => {
                             className={styles.SocialIcon}
                             target="_blank"
                             rel="noreferrer"
-                            href="https://abhijit-stopwatch.netlify.app/"
+                            href="https://abhijit-fullstack-todo-app.netlify.app/"
                           >
                             <GoLinkExternal size="30px" />
                           </a>
@@ -831,21 +832,22 @@ export const Work = () => {
                   w="300px"
                   borderRadius={5}
                   h="150px"
-                  src={StopWatch}
+                  src={todoApp}
                 ></Image>
                 <Heading mt={3} size="md">
-                  Stop Watch App
+                  ToDo App
                 </Heading>
                 <Box mt={3} textAlign="left">
                   <Text fontSize="15px">
-                    This is a basic stop watch. In this stop watch user can
-                    start, pause, stop and reset the time as per requirement.
+                    This is a fullstack ToDo App. In this ToDo App you can
+                    easily add a new ToDo, update the ToDo and also able to
+                    delete the ToDo.
                   </Text>
                   <Text fontSize="15px" mt={3}>
                     <span style={{ color: "#d60916", fontWeight: "bold" }}>
                       Tech Stack :
                     </span>{" "}
-                    HTML5 | CSS3 | Javascript
+                    MongoDB | ExpressJS | React | NodeJS
                   </Text>
                   <Text fontSize="13px" mt={3}>
                     An Individual project, build in 1 days.
@@ -858,7 +860,7 @@ export const Work = () => {
                             className={styles.SocialIcon}
                             target="_blank"
                             rel="noreferrer"
-                            href="https://github.com/abhijitnr/stop-watch-app"
+                            href="https://github.com/abhijitnr/MERN-STACK-TODO-APP"
                           >
                             <GrGithub size="30px" />
                           </a>
@@ -872,7 +874,7 @@ export const Work = () => {
                             className={styles.SocialIcon}
                             target="_blank"
                             rel="noreferrer"
-                            href="https://abhijit-stopwatch.netlify.app/"
+                            href="https://abhijit-fullstack-todo-app.netlify.app/"
                           >
                             <GoLinkExternal size="30px" />
                           </a>
@@ -1254,21 +1256,22 @@ export const Work = () => {
                   w="300px"
                   borderRadius={5}
                   h="150px"
-                  src={StopWatch}
+                  src={todoApp}
                 ></Image>
                 <Heading mt={3} size="md">
-                  Stop Watch App
+                  ToDo App
                 </Heading>
                 <Box mt={3} textAlign="left">
                   <Text fontSize="15px">
-                    This is a basic stop watch. In this stop watch user can
-                    start, pause, stop and reset the time as per requirement.
+                    This is a fullstack ToDo App. In this ToDo App you can
+                    easily add a new ToDo, update the ToDo and also able to
+                    delete the ToDo.
                   </Text>
                   <Text fontSize="15px" mt={3}>
                     <span style={{ color: "#d60916", fontWeight: "bold" }}>
                       Tech Stack :
                     </span>{" "}
-                    HTML5 | CSS3 | Javascript
+                    MongoDB | ExpressJS | React | NodeJS
                   </Text>
                   <Text fontSize="13px" mt={3}>
                     An Individual project, build in 1 days.
@@ -1281,7 +1284,7 @@ export const Work = () => {
                             className={styles.SocialIcon}
                             target="_blank"
                             rel="noreferrer"
-                            href="https://github.com/abhijitnr/stop-watch-app"
+                            href="https://github.com/abhijitnr/MERN-STACK-TODO-APP"
                           >
                             <GrGithub size="30px" />
                           </a>
@@ -1295,7 +1298,7 @@ export const Work = () => {
                             className={styles.SocialIcon}
                             target="_blank"
                             rel="noreferrer"
-                            href="https://abhijit-stopwatch.netlify.app/"
+                            href="https://abhijit-fullstack-todo-app.netlify.app/"
                           >
                             <GoLinkExternal size="30px" />
                           </a>

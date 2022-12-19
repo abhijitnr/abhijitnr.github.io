@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.c462e360.css",
-    "main.js": "/static/js/main.b00585b5.js",
+    "main.js": "/static/js/main.b0537aca.js",
     "static/media/mini-youtube.PNG": "/static/media/mini-youtube.7517a7a744e6adc3d650.PNG",
-    "static/media/kindmeal-clone.PNG": "/static/media/kindmeal-clone.abf67b785f86300cf982.PNG",
     "static/media/ssense-clone.PNG": "/static/media/ssense-clone.5865832e8fd652ac61bc.PNG",
+    "static/media/prettyinpink.png": "/static/media/prettyinpink.a9ecd4ad0976cc02bec0.png",
     "static/media/wheather-app.PNG": "/static/media/wheather-app.c25beb4fde5678e82161.PNG",
     "static/media/creativity1.png": "/static/media/creativity1.445675a0a00c2757a1d6.png",
     "static/media/abhijit-biswas.png": "/static/media/abhijit-biswas.0dcde4c5ab33928312d5.png",
@@ -32,10 +32,10 @@
     "static/media/css.svg": "/static/media/css.afb434f6d712d3e4ff53be8da4d9876a.svg",
     "static/media/html.svg": "/static/media/html.75bdf0b057c088503944680032ea6347.svg",
     "main.c462e360.css.map": "/static/css/main.c462e360.css.map",
-    "main.b00585b5.js.map": "/static/js/main.b00585b5.js.map"
+    "main.b0537aca.js.map": "/static/js/main.b0537aca.js.map"
   },
   "entrypoints": [
     "static/css/main.c462e360.css",
-    "static/js/main.b00585b5.js"
+    "static/js/main.b0537aca.js"
   ]
 }

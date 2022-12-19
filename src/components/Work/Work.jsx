@@ -14,7 +14,7 @@ import { GrGithub } from "react-icons/gr";
 import { GoLinkExternal } from "react-icons/go";
 import SsenseClone from "../../Assets/projectImg/ssense-clone.PNG";
 import TogglTrack from "../../Assets/projectImg/toggl-clone.PNG";
-import KindMealClone from "../../Assets/projectImg/kindmeal-clone.PNG";
+import prettyinpink from "../../Assets/projectImg/prettyinpink.png";
 import MiniYoutube from "../../Assets/projectImg/mini-youtube.PNG";
 import WheatherApp from "../../Assets/projectImg/wheather-app.PNG";
 import todoApp from "../../Assets/projectImg/todo-app.png";
@@ -80,7 +80,7 @@ export const Work = () => {
                   src={SsenseClone}
                 ></Image>
                 <Heading mt={3} size="md">
-                  Ssense.com Clone
+                  SSENSE.COM - CLONE
                 </Heading>
                 <Box mt={3} textAlign="left">
                   <Text fontSize="15px">
@@ -96,8 +96,8 @@ export const Work = () => {
                     HTML5 | CSS3 | Javascript
                   </Text>
                   <Text fontSize="13px" mt={3}>
-                    A collabrative project, built in 5 days by a team of 3
-                    members. Team lead by me.
+                    A collaborative project built by a team of 3 executed in 5
+                    days. Team lead by me.
                   </Text>
                   <Center>
                     <Flex w="70%" mt={9} p={2}>
@@ -144,26 +144,26 @@ export const Work = () => {
                   w="300px"
                   borderRadius={5}
                   h="150px"
-                  src={KindMealClone}
+                  src={prettyinpink}
                 ></Image>
                 <Heading mt={3} size="md">
-                  KindMeals.my Clone
+                  BEAUTYBEBO.COM - CLONE
                 </Heading>
                 <Box mt={3} textAlign="left">
                   <Text fontSize="15px">
-                    Malaysia's No.1 meat-free lifestyle platform. Grab free
-                    coupons for exciting meal deals, discover delicious food and
-                    share delightful moments with foods and others delicious
-                    recipes.
+                    Beauty Bebo is India's fastest-growing online retail store
+                    for makeup, skin care, hair care, personal care, mom and
+                    baby care, fragrance, and Ayurveda products.
                   </Text>
                   <Text fontSize="15px" mt={3}>
                     <span style={{ color: "#d60916", fontWeight: "bold" }}>
                       Tech Stack :
                     </span>{" "}
-                    HTML5 | CSS3 | React Js | Chakra UI | Javascript
+                    MongoDB | ExpressJS | ReactJS | NodeJS | Redux
                   </Text>
                   <Text fontSize="13px" mt={3}>
-                    A Individual project, built in 5 days.
+                    A collaborative project built by a team of 4 executed in 6
+                    days.
                   </Text>
                   <Center>
                     <Flex w="70%" mt={7} p={2}>
@@ -173,7 +173,7 @@ export const Work = () => {
                             className={styles.SocialIcon}
                             target="_blank"
                             rel="noreferrer"
-                            href="https://github.com/abhijitnr/KindMeals.my-Clone"
+                            href="https://github.com/abhijitnr/beautybebo.com-clone-MERN"
                           >
                             <GrGithub size="30px" />
                           </a>
@@ -187,7 +187,7 @@ export const Work = () => {
                             className={styles.SocialIcon}
                             target="_blank"
                             rel="noreferrer"
-                            href="https://rct-101-construct-week-project.netlify.app/"
+                            href="https://prettyinpink.netlify.app/"
                           >
                             <GoLinkExternal size="30px" />
                           </a>
@@ -227,7 +227,7 @@ export const Work = () => {
                     HTML5 | CSS3 | Javascript | weather API
                   </Text>
                   <Text fontSize="13px" mt={3}>
-                    An Individual project, build in 2 days.
+                    An Individual project executed in 4 days.
                   </Text>
                   <Center>
                     <Flex w="70%" mt="70px" p={2}>
@@ -295,8 +295,8 @@ export const Work = () => {
                     HTML5 | CSS3 | Javascript
                   </Text>
                   <Text fontSize="13px" mt={3}>
-                    A collabrative project, built in 5 days by a team of 5
-                    members. Team lead by me.
+                    A collaborative project built by a team of 5 executed in 5
+                    days. Team lead by me.
                   </Text>
                   <Center>
                     <Flex w="70%" mt="80px" p={2}>
@@ -361,7 +361,7 @@ export const Work = () => {
                     HTML5 | CSS3 | Javascript
                   </Text>
                   <Text fontSize="13px" mt={3}>
-                    An Individual project, build in 2 days.
+                    An Individual project executed in 2 days.
                   </Text>
                   <Center>
                     <Flex w="70%" mt="80px" p={2}>
@@ -426,7 +426,7 @@ export const Work = () => {
                     MongoDB | ExpressJS | React | NodeJS
                   </Text>
                   <Text fontSize="13px" mt={3}>
-                    An Individual project, build in 1 days.
+                    An Individual project executed in 2 days.
                   </Text>
                   <Center>
                     <Flex w="70%" mt="80px" p={2}>
@@ -504,7 +504,7 @@ export const Work = () => {
                   src={SsenseClone}
                 ></Image>
                 <Heading mt={3} size="md">
-                  Ssense.com Clone
+                  SSENSE.COM - CLONE
                 </Heading>
                 <Box mt={3} textAlign="left">
                   <Text fontSize="15px">
@@ -520,8 +520,8 @@ export const Work = () => {
                     HTML5 | CSS3 | Javascript
                   </Text>
                   <Text fontSize="13px" mt={3}>
-                    A collabrative project, built in 5 days by a team of 3
-                    members.Team lead by me.
+                    A collaborative project built by a team of 3 executed in 5
+                    days. Team lead by me.
                   </Text>
                   <Center>
                     <Flex w="70%" mt={9} p={2}>
@@ -568,26 +568,26 @@ export const Work = () => {
                   w="300px"
                   borderRadius={5}
                   h="150px"
-                  src={KindMealClone}
+                  src={prettyinpink}
                 ></Image>
                 <Heading mt={3} size="md">
-                  KindMeals.my Clone
+                  BEAUTYBEBO.COM - CLONE
                 </Heading>
                 <Box mt={3} textAlign="left">
                   <Text fontSize="15px">
-                    Malaysia's No.1 meat-free lifestyle platform. Grab free
-                    coupons for exciting meal deals, discover delicious food and
-                    share delightful moments with foods and others delicious
-                    recipes.
+                    Beauty Bebo is India's fastest-growing online retail store
+                    for makeup, skin care, hair care, personal care, mom and
+                    baby care, fragrance, and Ayurveda products.
                   </Text>
                   <Text fontSize="15px" mt={3}>
                     <span style={{ color: "#d60916", fontWeight: "bold" }}>
                       Tech Stack :
                     </span>{" "}
-                    HTML5 | CSS3 | React Js | Chakra UI | Javascript
+                    MongoDB | ExpressJS | ReactJS | NodeJS | Redux
                   </Text>
                   <Text fontSize="13px" mt={3}>
-                    A Individual project, built in 5 days.
+                    A collaborative project built by a team of 4 executed in 6
+                    days.
                   </Text>
                   <Center>
                     <Flex w="70%" mt="80px" p={2}>
@@ -597,7 +597,7 @@ export const Work = () => {
                             className={styles.SocialIcon}
                             target="_blank"
                             rel="noreferrer"
-                            href="https://github.com/abhijitnr/KindMeals.my-Clone"
+                            href="https://github.com/abhijitnr/beautybebo.com-clone-MERN"
                           >
                             <GrGithub size="30px" />
                           </a>
@@ -611,7 +611,7 @@ export const Work = () => {
                             className={styles.SocialIcon}
                             target="_blank"
                             rel="noreferrer"
-                            href="https://rct-101-construct-week-project.netlify.app/"
+                            href="https://prettyinpink.netlify.app/"
                           >
                             <GoLinkExternal size="30px" />
                           </a>
@@ -719,8 +719,8 @@ export const Work = () => {
                     HTML5 | CSS3 | Javascript
                   </Text>
                   <Text fontSize="13px" mt={3}>
-                    A collabrative project, built in 5 days by a team of 5
-                    members. Team lead by me.
+                    A collaborative project built by a team of 5 executed in 5
+                    days. Team lead by me.
                   </Text>
                   <Center>
                     <Flex w="70%" mt="80px" p={2}>
@@ -785,7 +785,7 @@ export const Work = () => {
                     HTML5 | CSS3 | Javascript
                   </Text>
                   <Text fontSize="13px" mt={3}>
-                    An Individual project, build in 2 days.
+                    An Individual project executed in 2 days.
                   </Text>
                   <Center>
                     <Flex w="70%" mt="80px" p={2}>
@@ -850,7 +850,7 @@ export const Work = () => {
                     MongoDB | ExpressJS | React | NodeJS
                   </Text>
                   <Text fontSize="13px" mt={3}>
-                    An Individual project, build in 1 days.
+                    An Individual project executed in 2 days.
                   </Text>
                   <Center>
                     <Flex w="70%" mt="80px" p={2}>
@@ -928,7 +928,7 @@ export const Work = () => {
                   src={SsenseClone}
                 ></Image>
                 <Heading mt={3} size="md">
-                  Ssense.com Clone
+                  SSENSE.COM - CLONE
                 </Heading>
                 <Box mt={3} textAlign="left">
                   <Text fontSize="15px">
@@ -944,8 +944,8 @@ export const Work = () => {
                     HTML5 | CSS3 | Javascript
                   </Text>
                   <Text fontSize="13px" mt={3}>
-                    A collabrative project, built in 5 days by a team of 3
-                    members.Team lead by me.
+                    A collaborative project built by a team of 3 executed in 5
+                    days. Team lead by me.
                   </Text>
                   <Center>
                     <Flex w="70%" mt={9} p={2}>
@@ -992,26 +992,26 @@ export const Work = () => {
                   w="300px"
                   borderRadius={5}
                   h="150px"
-                  src={KindMealClone}
+                  src={prettyinpink}
                 ></Image>
                 <Heading mt={3} size="md">
-                  KindMeals.my Clone
+                  BEAUTYBEBO.COM - CLONE
                 </Heading>
                 <Box mt={3} textAlign="left">
                   <Text fontSize="15px">
-                    Malaysia's No.1 meat-free lifestyle platform. Grab free
-                    coupons for exciting meal deals, discover delicious food and
-                    share delightful moments with foods and others delicious
-                    recipes.
+                    Beauty Bebo is India's fastest-growing online retail store
+                    for makeup, skin care, hair care, personal care, mom and
+                    baby care, fragrance, and Ayurveda products.
                   </Text>
                   <Text fontSize="15px" mt={3}>
                     <span style={{ color: "#d60916", fontWeight: "bold" }}>
                       Tech Stack :
                     </span>{" "}
-                    HTML5 | CSS3 | React Js | Chakra UI | Javascript
+                    MongoDB | ExpressJS | ReactJS | NodeJS | Redux
                   </Text>
                   <Text fontSize="13px" mt={3}>
-                    A Individual project, built in 5 days.
+                    A collaborative project built by a team of 4 executed in 6
+                    days.
                   </Text>
                   <Center>
                     <Flex w="70%" mt={7} p={2}>
@@ -1021,7 +1021,7 @@ export const Work = () => {
                             className={styles.SocialIcon}
                             target="_blank"
                             rel="noreferrer"
-                            href="https://github.com/abhijitnr/KindMeals.my-Clone"
+                            href="https://github.com/abhijitnr/beautybebo.com-clone-MERN"
                           >
                             <GrGithub size="30px" />
                           </a>
@@ -1035,7 +1035,7 @@ export const Work = () => {
                             className={styles.SocialIcon}
                             target="_blank"
                             rel="noreferrer"
-                            href="https://rct-101-construct-week-project.netlify.app/"
+                            href="https://prettyinpink.netlify.app/"
                           >
                             <GoLinkExternal size="30px" />
                           </a>
@@ -1143,8 +1143,8 @@ export const Work = () => {
                     HTML5 | CSS3 | Javascript
                   </Text>
                   <Text fontSize="13px" mt={3}>
-                    A collabrative project, built in 5 days by a team of 5
-                    members. Team lead by me.
+                    A collaborative project built by a team of 5 executed in 5
+                    days. Team lead by me.
                   </Text>
                   <Center>
                     <Flex w="70%" mt="80px" p={2}>
@@ -1209,7 +1209,7 @@ export const Work = () => {
                     HTML5 | CSS3 | Javascript
                   </Text>
                   <Text fontSize="13px" mt={3}>
-                    An Individual project, build in 2 days.
+                    An Individual project executed in 2 days.
                   </Text>
                   <Center>
                     <Flex w="70%" mt="80px" p={2}>
@@ -1274,7 +1274,7 @@ export const Work = () => {
                     MongoDB | ExpressJS | React | NodeJS
                   </Text>
                   <Text fontSize="13px" mt={3}>
-                    An Individual project, build in 1 days.
+                    An Individual project executed in 2 days.
                   </Text>
                   <Center>
                     <Flex w="70%" mt="80px" p={2}>

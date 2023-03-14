@@ -1,0 +1,177 @@
+@import "colors";
+
+.navbar {
+  width: 100%;
+  height: 80px;
+  background-color: $black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid $white;
+  position: fixed;
+  top: 0px;
+  z-index: 10;
+
+  // Logo
+  > div:first-child {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    > a {
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      > p {
+        color: $red;
+        font-size: 2rem;
+        margin-left: 1rem;
+        font-weight: 500;
+        cursor: pointer;
+        font-style: italic;
+
+        > span {
+          color: $white;
+        }
+
+        &:hover {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  // All Routes
+  > div:nth-child(2) {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    gap: 2rem;
+
+    > a {
+      text-decoration: none;
+      color: $white;
+      font-weight: 400;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      transition: 1s ease-in-out;
+      position: relative;
+
+      &:hover,
+      &.active {
+        color: $blue;
+      }
+
+      &:hover::after,
+      &.active::after {
+        content: "";
+        width: 80%;
+        height: 2px;
+        background: $blue;
+        position: absolute;
+        bottom: -4px;
+        left: 0px;
+      }
+    }
+  }
+
+  // For Mobile Screen
+  > div:last-child {
+    display: none;
+
+    > span {
+      color: $white;
+      cursor: pointer;
+      margin-right: 2rem;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .navbar {
+    // Logo
+    > div:first-child {
+      width: 15%;
+
+      > a > p {
+        font-size: 1.5rem;
+      }
+    }
+
+    // All Routes
+    > div:nth-child(2) {
+      width: 75%;
+      gap: 1rem;
+      > a {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .navbar {
+    // All Routes
+    > div:nth-child(2) {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      position: fixed;
+      top: 81px;
+      right: -50%;
+      width: 50%;
+      height: 100vh;
+      background: $black;
+      box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+      transition: 0.3s ease-in-out;
+      gap: 1.5rem;
+
+      > a:first-child {
+        margin-top: 40px;
+      }
+
+      > a {
+        margin-left: 40px;
+      }
+    }
+
+    // For Mobile Screen
+    > div:last-child {
+      display: block;
+      > span {
+        cursor: pointer;
+        font-size: 24px;
+      }
+    }
+  }
+
+  #nav.active {
+    right: 0px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .navbar {
+    // Logo
+    > div:first-child > a > p {
+      font-size: 25px;
+    }
+
+    // All Routes
+    > div:nth-child(2) {
+      right: -70%;
+      width: 70%;
+    }
+  }
+}

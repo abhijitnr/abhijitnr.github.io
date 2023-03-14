@@ -1,0 +1,84 @@
+@import "colors";
+
+#about-me {
+  width: 100%;
+  height: auto;
+  padding: 80px 0 30px 0;
+  background-color: $black;
+
+  > h1 {
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    color: $red;
+    font-size: 50px;
+    font-weight: 500;
+    padding-bottom: 2px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    width: fit-content;
+
+    > span {
+      color: $white;
+    }
+  }
+
+  > div {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+
+    > h5 {
+      font-size: 40px;
+      margin: 0;
+      border: 0;
+      color: $white;
+      font-weight: 500;
+
+      > span {
+        color: $red;
+      }
+    }
+
+    > p {
+      font-size: 20px;
+      color: $white;
+
+      > span {
+        color: $blue;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 769px) {
+  #about-me {
+    height: auto;
+    padding: 90px 0 30px 0;
+    > div {
+      width: 90%;
+
+      > h5 {
+        font-size: 30px;
+      }
+
+      > p {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 321px) {
+  #about-me > div {
+    width: 92%;
+    > h5 {
+      font-size: 25px;
+    }
+    > p {
+      font-size: 16px;
+    }
+  }
+}

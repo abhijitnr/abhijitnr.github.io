@@ -1,0 +1,95 @@
+@import "colors";
+
+#github-stats {
+  width: 100%;
+  height: auto;
+  padding-top: 80px;
+  background-color: $black;
+  color: $white;
+
+  > h1 {
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    color: $red;
+    font-size: 50px;
+    font-weight: 500;
+    padding-bottom: 2px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    width: fit-content;
+
+    > span {
+      color: $white;
+    }
+  }
+
+  > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+  }
+
+  #stats {
+    width: 70%;
+    margin: auto;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    > div {
+      width: 50%;
+      > img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 769px) {
+  #github-stats {
+    height: auto;
+    > div {
+      width: 90%;
+      margin: auto;
+      margin-top: 40px;
+    }
+
+    #stats {
+      width: 90%;
+    }
+  }
+}
+
+@media screen and (max-width: 426px) {
+  #github-stats {
+    height: auto;
+
+    > h1 {
+      font-size: 40px;
+
+      > span {
+        color: $white;
+      }
+    }
+
+    > div {
+      width: 90%;
+      margin: auto;
+      margin-top: 40px;
+    }
+
+    #stats {
+      width: 90%;
+      flex-direction: column;
+
+      > div {
+        width: 90%;
+        margin: auto;
+      }
+    }
+  }
+}

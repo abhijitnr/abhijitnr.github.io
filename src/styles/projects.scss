@@ -1,0 +1,139 @@
+@import "colors";
+
+#projects {
+  width: 100%;
+  height: auto;
+  padding-top: 80px;
+  background-color: $black;
+  color: $white;
+
+  > h1 {
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    color: $red;
+    font-size: 50px;
+    font-weight: 500;
+    padding-bottom: 2px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    width: fit-content;
+
+    > span {
+      color: $white;
+    }
+  }
+
+  > div {
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 2rem;
+
+    .thumb {
+      display: none;
+    }
+
+    > div {
+      box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+        rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+        rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+      border-radius: 10px;
+      padding-bottom: 10px;
+
+      > div {
+        .slider_img {
+          border-radius: 10px 10px 0 0;
+        }
+      }
+
+      .content {
+        height: auto;
+
+        > h1 {
+          text-align: center;
+          font-weight: 400;
+          color: $blue;
+        }
+
+        > h2 {
+          text-align: center;
+          font-weight: 400;
+          color: $red;
+        }
+
+        > p {
+          width: 90%;
+          margin: auto;
+          text-align: center;
+          font-size: 18px;
+        }
+
+        > div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 16px;
+          margin-bottom: 15px;
+
+          > a {
+            text-decoration: none;
+            background-color: $blue;
+            padding: 10px 20px;
+            color: $black;
+            border-radius: 8px;
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+          }
+
+          > img {
+            width: 35px;
+            height: 35px;
+            transition: 0.3s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  #projects > div {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 426px) {
+  #projects {
+    > h1 {
+      font-size: 35px;
+    }
+
+    > div {
+      width: 95%;
+    }
+  }
+}
+
+@media screen and (max-width: 376px) {
+  #projects {
+    > h1 {
+      font-size: 28px;
+    }
+
+    > div {
+      width: 95%;
+
+      > div .content > div > img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}

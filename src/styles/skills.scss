@@ -1,0 +1,108 @@
+@import "colors";
+
+#skills {
+  width: 100%;
+  height: auto;
+  padding-top: 80px;
+  background-color: $black;
+  color: $white;
+
+  > h1 {
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    color: $red;
+    font-size: 50px;
+    font-weight: 500;
+    padding-bottom: 2px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    width: fit-content;
+
+    > span {
+      color: $white;
+    }
+  }
+
+  > .skills_headings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+    > span {
+      color: $white;
+      background-color: $red;
+      font-weight: 400;
+      padding: 8px 20px;
+      border-radius: 10px;
+      font-size: 25px;
+    }
+  }
+
+  > section {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    > div {
+      width: 200px;
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(17, 77, 189);
+      border-radius: 50%;
+      border: 1px solid $white;
+
+      &:hover {
+        background-color: transparent;
+        border: 1px solid $red;
+      }
+
+      > img {
+        width: 80px;
+        height: 80px;
+      }
+
+      > span {
+        margin-top: 20px;
+        color: $white;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 769px) {
+  #skills {
+    > h1 {
+      font-size: 45px;
+    }
+
+    > section {
+      width: 90%;
+
+      > div {
+        width: 150px;
+        height: 150px;
+
+        > img {
+          width: 70px;
+          height: 70px;
+        }
+
+        > span {
+          margin-top: 12px;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}

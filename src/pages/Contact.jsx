@@ -13,6 +13,10 @@ import { BsLinkedin, BsGithub } from "react-icons/bs";
 const Contact = () => {
   const form = useRef();
 
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -32,6 +36,10 @@ const Contact = () => {
           console.log(error.text);
         }
       );
+
+    setName("");
+    setEmail("");
+    setMessage("");
   };
 
   return (
@@ -95,6 +103,8 @@ const Contact = () => {
                   type="text"
                   name="user_name"
                   placeholder="Name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
                   required
                 />
                 <br />
@@ -106,6 +116,8 @@ const Contact = () => {
                   type="email"
                   name="user_email"
                   placeholder="Email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   required
                 />
                 <br />
@@ -113,7 +125,12 @@ const Contact = () => {
                   Message <span>*</span>
                 </label>
                 <br />
-                <textarea name="message" placeholder="Message" />
+                <textarea
+                  name="message"
+                  placeholder="Message"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                />
                 <br />
                 <input
                   className="send_button"

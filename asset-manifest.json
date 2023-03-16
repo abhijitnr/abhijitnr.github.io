@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.70d32681.css",
-    "main.js": "/static/js/main.a7d58d9b.js",
+    "main.js": "/static/js/main.e06d129c.js",
     "static/media/abhijit_biswas.png": "/static/media/abhijit_biswas.384e2ffc0f412dbd8a79.png",
     "static/media/1.png": "/static/media/1.7a66c442eb1e1096b215.png",
     "static/media/2.png": "/static/media/2.bbdb419a24b4774829d7.png",
@@ -32,10 +32,10 @@
     "static/media/sass.svg": "/static/media/sass.3bd84b23ee7ca645327dc4c04edeb72c.svg",
     "index.html": "/index.html",
     "main.70d32681.css.map": "/static/css/main.70d32681.css.map",
-    "main.a7d58d9b.js.map": "/static/js/main.a7d58d9b.js.map"
+    "main.e06d129c.js.map": "/static/js/main.e06d129c.js.map"
   },
   "entrypoints": [
     "static/css/main.70d32681.css",
-    "static/js/main.a7d58d9b.js"
+    "static/js/main.e06d129c.js"
   ]
 }

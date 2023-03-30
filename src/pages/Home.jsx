@@ -64,7 +64,7 @@ const Home = () => {
 
       {/* Photo */}
       <div>
-        <img src={abhijit_biswas} alt="Abhijit Biswas" />
+        <img src={abhijit_biswas} alt="Abhijit Biswas" loading="lazy" />
       </div>
     </section>
   );

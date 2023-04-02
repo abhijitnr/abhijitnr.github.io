@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 import html from "../assets/tech_stacks/html.png";
 import css from "../assets/tech_stacks/css.png";
 import javascript from "../assets/tech_stacks/javascript.png";
@@ -27,170 +29,122 @@ import illustrator from "../assets/tools/illustrator.png";
 import git from "../assets/tools/git.png";
 
 const Skills = () => {
+  const technicalSkills = [
+    { tech: html, name: "HTML5" },
+    { tech: css, name: "CSS3" },
+    { tech: javascript, name: "JavaScript" },
+    { tech: react, name: "React" },
+    { tech: redux, name: "Redux" },
+    { tech: sass, name: "Sass" },
+    { tech: bootstrap, name: "Bootstrap" },
+    { tech: mui, name: "Material-UI" },
+    { tech: chakra, name: "Chakra-UI" },
+    { tech: mongodb, name: "MongoDB" },
+    { tech: nodejs, name: "Node.js" },
+    { tech: express, name: "Express.js" },
+  ];
+
+  const softSkills = [
+    { soft: collaborative, name: "Collaborative" },
+    { soft: communication, name: "Communication" },
+    { soft: creative_thinking, name: "Creative Thinking" },
+    { soft: problem_solving, name: "Problem Solving" },
+    { soft: time_management, name: "Time Management" },
+  ];
+
+  const tools = [
+    { tool: vscode, name: "VS Code" },
+    { tool: github, name: "GitHub" },
+    { tool: postman, name: "Postman" },
+    { tool: code_sandbox, name: "CodeSandbox" },
+    { tool: netlify, name: "Netlify" },
+    { tool: photoshop, name: "Adobe Photoshop" },
+    { tool: illustrator, name: "Adobe Illustrator" },
+    { tool: git, name: "Git" },
+  ];
+
   return (
     <section id="skills">
-      <h1>
+      <motion.h1
+        animate={{
+          scale: [1, 1.1, 1.1, 1, 1],
+          rotate: [0, 90, 180, 90, 0],
+          borderRadius: ["50%", "0%", "50%", "0%", "50%"],
+        }}
+        transition={{
+          duration: 2,
+          ease: "easeInOut",
+          times: [0, 0.2, 0.5, 0.8, 1],
+        }}
+        whileHover={{ scale: [null, 1.2, 1.1] }}
+      >
         Skills <span>& Tools</span>
-      </h1>
+      </motion.h1>
 
       {/* Technical Skills */}
       <div className="skills_headings">
-        <span>Technical Skills</span>
+        <motion.span
+          whileHover={{ scale: [null, 1.3, 1.2] }}
+          transition={{ duration: 0.3 }}
+        >
+          Technical Skills
+        </motion.span>
       </div>
 
       <section>
-        {/* HTML5 */}
-        <div>
-          <img src={html} alt="HTML5" />
-          <span>HTML5</span>
-        </div>
-        {/* CSS3 */}
-        <div>
-          <img src={css} alt="CSS3" />
-          <span>CSS3</span>
-        </div>
-        {/* JavaScript */}
-        <div>
-          <img src={javascript} alt="JavaScript" />
-          <span>JavaScript</span>
-        </div>
-        {/* ReactJS */}
-        <div>
-          <img src={react} alt="React" />
-          <span>React</span>
-        </div>
-        {/* Redux */}
-        <div>
-          <img src={redux} alt="Redux" />
-          <span>Redux</span>
-        </div>
-        {/* Scss */}
-        <div>
-          <img src={sass} alt="Sass" />
-          <span>Sass</span>
-        </div>
-        {/* Bootstrap */}
-        <div>
-          <img src={bootstrap} alt="Bootstrap" />
-          <span>Bootstrap</span>
-        </div>
-        {/* Material-UI */}
-        <div>
-          <img src={mui} alt="Material-UI" />
-          <span>Material-UI</span>
-        </div>
-        {/* Chakra-UI */}
-        <div>
-          <img src={chakra} alt="Chakra-UI" />
-          <span>Chakra-UI</span>
-        </div>
-        {/* MongoDB */}
-        <div>
-          <img src={mongodb} alt="MongoDB" />
-          <span>MongoDB</span>
-        </div>
-        {/* NodeJS */}
-        <div>
-          <img src={nodejs} alt="Node.js" />
-          <span>Node.js</span>
-        </div>
-        {/* ExpressJS */}
-        <div>
-          <img src={express} alt="Express.js" />
-          <span>Express.js</span>
-        </div>
+        {technicalSkills.map((item) => (
+          <motion.div
+            whileHover={{ scale: [null, 0.8, 0.9] }}
+            transition={{ duration: 0.3 }}
+          >
+            <img src={item.tech} alt={item.name} />
+            <span>{item.name}</span>
+          </motion.div>
+        ))}
       </section>
 
       {/* Soft Skills */}
       <div className="skills_headings">
-        <span>Soft Skills</span>
+        <motion.span
+          whileHover={{ scale: [null, 1.3, 1.2] }}
+          transition={{ duration: 0.3 }}
+        >
+          Soft Skills
+        </motion.span>
       </div>
 
       <section>
-        {/* Collaborative */}
-        <div>
-          <img src={collaborative} alt="Collaborative" />
-          <span>Collaborative</span>
-        </div>
-
-        {/* Communication */}
-        <div>
-          <img src={communication} alt="Communication" />
-          <span>Communication</span>
-        </div>
-
-        {/* Creative Thinking */}
-        <div>
-          <img src={creative_thinking} alt="Creative Thinking" />
-          <span>Creative Thinking</span>
-        </div>
-
-        {/* Problem Solving */}
-        <div>
-          <img src={problem_solving} alt="Problem Solving" />
-          <span>Problem Solving</span>
-        </div>
-
-        {/* Time Management */}
-        <div>
-          <img src={time_management} alt="Time Management" />
-          <span>Time Management</span>
-        </div>
+        {softSkills.map((item) => (
+          <motion.div
+            whileHover={{ scale: [null, 0.8, 0.9] }}
+            transition={{ duration: 0.3 }}
+          >
+            <img src={item.soft} alt={item.name} />
+            <span>{item.name}</span>
+          </motion.div>
+        ))}
       </section>
 
       {/* Tools */}
       <div className="skills_headings">
-        <span>Tools</span>
+        <motion.span
+          whileHover={{ scale: [null, 1.3, 1.2] }}
+          transition={{ duration: 0.3 }}
+        >
+          Tools
+        </motion.span>
       </div>
 
       <section>
-        {/* VS Code */}
-        <div>
-          <img src={vscode} alt="VS Code" />
-          <span>VS Code</span>
-        </div>
-
-        {/* GitHub */}
-        <div>
-          <img src={github} alt="GitHub" />
-          <span>GitHub</span>
-        </div>
-
-        {/* Postman */}
-        <div>
-          <img src={postman} alt="Postman" />
-          <span>Postman</span>
-        </div>
-
-        {/* CodeSandbox */}
-        <div>
-          <img src={code_sandbox} alt="CodeSandbox" />
-          <span>CodeSandbox</span>
-        </div>
-
-        {/* Netlify */}
-        <div>
-          <img src={netlify} alt="Netlify" />
-          <span>Netlify</span>
-        </div>
-
-        {/* Adobe Photoshop */}
-        <div>
-          <img src={photoshop} alt="Adobe Photoshop" />
-          <span>Adobe Photoshop</span>
-        </div>
-
-        {/* Adobe Illustrator */}
-        <div>
-          <img src={illustrator} alt="Adobe Illustrator" />
-          <span>Adobe Illustrator</span>
-        </div>
-
-        {/* Git */}
-        <div>
-          <img src={git} alt="Git" />
-          <span>Git</span>
-        </div>
+        {tools.map((item) => (
+          <motion.div
+            whileHover={{ scale: [null, 0.8, 0.9] }}
+            transition={{ duration: 0.3 }}
+          >
+            <img src={item.tool} alt={item.name} />
+            <span>{item.name}</span>
+          </motion.div>
+        ))}
       </section>
     </section>
   );

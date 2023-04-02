@@ -10,6 +10,8 @@ import {
 import { MdAccountCircle } from "react-icons/md";
 import { HiDocumentText } from "react-icons/hi";
 
+import { motion } from "framer-motion";
+
 const Navbar = () => {
   const [clicked, setClicked] = useState(false);
 
@@ -33,55 +35,82 @@ const Navbar = () => {
       {/* ALL ROUTES */}
       <div id="nav" className={clicked ? "#nav active" : "#nav"}>
         {/* Home */}
-        <a className="active" href="#home">
+        <motion.a
+          className="active"
+          href="#home"
+          whileHover={{ scale: [null, 1.2, 1.1] }}
+          transition={{ duration: 0.3 }}
+        >
           <AiFillHome />
           HOME
-        </a>
+        </motion.a>
 
         {/* About Me */}
-        <a href="#about-me">
+        <motion.a
+          href="#about-me"
+          whileHover={{ scale: [null, 1.2, 1.1] }}
+          transition={{ duration: 0.3 }}
+        >
           <MdAccountCircle />
           ABOUT ME
-        </a>
+        </motion.a>
 
         {/* Github Stats */}
 
-        <a href="#github-stats">
+        <motion.a
+          href="#github-stats"
+          whileHover={{ scale: [null, 1.2, 1.1] }}
+          transition={{ duration: 0.3 }}
+        >
           <AiFillGithub />
           GITHUB STATS
-        </a>
+        </motion.a>
 
         {/* Tech Stacks */}
 
-        <a href="#skills">
+        <motion.a
+          href="#skills"
+          whileHover={{ scale: [null, 1.2, 1.1] }}
+          transition={{ duration: 0.3 }}
+        >
           <AiFillStar />
           SKILLS
-        </a>
+        </motion.a>
 
         {/* Projects */}
 
-        <a href="#projects">
+        <motion.a
+          href="#projects"
+          whileHover={{ scale: [null, 1.2, 1.1] }}
+          transition={{ duration: 0.3 }}
+        >
           <AiFillProject />
           PROJECTS
-        </a>
+        </motion.a>
 
         {/* Contact */}
 
-        <a href="#contact">
+        <motion.a
+          href="#contact"
+          whileHover={{ scale: [null, 1.2, 1.1] }}
+          transition={{ duration: 0.3 }}
+        >
           <AiFillPhone />
           CONTACT
-        </a>
+        </motion.a>
 
         {/* Resume */}
 
-        <a
+        <motion.a
+          whileHover={{ scale: [null, 1.3, 1.2] }}
+          transition={{ duration: 0.3 }}
           href="https://drive.google.com/file/d/1jaQwBlpCLWsLddLHTDVFZWS8PvZEeAZG/view"
           target="_blank"
           rel="noreferrer"
         >
           <HiDocumentText />
           RESUME
-        </a>
+        </motion.a>
       </div>
 
       {/* For Mobile Screen */}

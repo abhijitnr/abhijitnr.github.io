@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { motion } from "framer-motion";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -45,51 +46,75 @@ const Contact = () => {
   return (
     <>
       <section id="contact">
-        <h1>
+        <motion.h1
+          animate={{
+            scale: [1, 1.1, 1.1, 1, 1],
+            rotate: [0, 90, 180, 90, 0],
+            borderRadius: ["50%", "0%", "50%", "0%", "50%"],
+          }}
+          transition={{
+            duration: 2,
+            ease: "easeInOut",
+            times: [0, 0.2, 0.5, 0.8, 1],
+          }}
+          whileHover={{ scale: [null, 1.2, 1.1] }}
+        >
           Contact <span>Info</span>
-        </h1>
+        </motion.h1>
 
         {/* Contact Info */}
         <div>
           {/* Social Link */}
           <div>
             <div className="social_icons">
-              <p>
+              <motion.p
+                whileHover={{ scale: [null, 0.8, 0.9] }}
+                transition={{ duration: 0.3 }}
+              >
                 <MdCall /> <span>+91 8011545825</span>
-              </p>
-              <p>
+              </motion.p>
+              <motion.p
+                whileHover={{ scale: [null, 0.8, 0.9] }}
+                transition={{ duration: 0.3 }}
+              >
                 <IoIosMail /> <span>abhijitbiswas8859@gmail.com</span>
-              </p>
+              </motion.p>
             </div>
 
             {/* Social Icons */}
             <div className="social_icons_contact">
               {/* Mail */}
-              <a
+              <motion.a
+                whileHover={{ scale: [null, 1.5, 1.4] }}
+                transition={{ duration: 0.3 }}
                 href="mailto:abhijitbiswas8859@gmail.com"
                 target="_blank"
                 rel="noreferrer"
               >
                 <IoMdMail />
-              </a>
+              </motion.a>
 
               {/* LinkedIn */}
-              <a
+              <motion.a
+                whileHover={{ scale: [null, 1.5, 1.4] }}
+                transition={{ duration: 0.3 }}
                 href="https://www.linkedin.com/in/abhijit-biswas-3b6586162/"
                 target="_blank"
                 rel="noreferrer"
               >
                 <BsLinkedin />
-              </a>
+              </motion.a>
 
               {/* Github */}
-              <a
+              <motion.a
+                whileHover={{ scale: [null, 1.5, 1.4] }}
+                transition={{ duration: 0.3 }}
                 href="https://github.com/abhijitnr"
                 target="_blank"
                 rel="noreferrer"
               >
                 <BsGithub />
-              </a>
+              </motion.a>
             </div>
 
             {/* Direct contant me using mail */}
@@ -148,10 +173,13 @@ const Contact = () => {
           </div>
         </div>
 
-        <p>
+        <motion.p
+          whileHover={{ scale: [null, 0.9, 0.8] }}
+          transition={{ duration: 0.3 }}
+        >
           Designed and Developed by <span>Abhijit Biswas</span>, &copy;
           Copyright 2023. All rights reserved.
-        </p>
+        </motion.p>
       </section>
       <ToastContainer />
     </>

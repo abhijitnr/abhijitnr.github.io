@@ -4,9 +4,21 @@ import { motion } from "framer-motion";
 const GithubStats = () => {
   return (
     <section id="github-stats">
-      <h1>
+      <motion.h1
+        animate={{
+          scale: [1, 1.1, 1.1, 1, 1],
+          rotate: [0, 90, 180, 90, 0],
+          borderRadius: ["50%", "0%", "50%", "0%", "50%"],
+        }}
+        transition={{
+          duration: 2,
+          ease: "easeInOut",
+          times: [0, 0.2, 0.5, 0.8, 1],
+        }}
+        whileHover={{ scale: [null, 1.2, 1.1] }}
+      >
         GitHub <span>Stats</span>
-      </h1>
+      </motion.h1>
 
       {/* GitHUb Calender */}
       <motion.div

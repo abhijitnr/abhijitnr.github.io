@@ -48,21 +48,9 @@ const Projects = () => {
 
   return (
     <section id="projects">
-      <motion.h1
-        animate={{
-          scale: [1, 1.1, 1.1, 1, 1],
-          rotate: [0, 90, 180, 90, 0],
-          borderRadius: ["50%", "0%", "50%", "0%", "50%"],
-        }}
-        transition={{
-          duration: 2,
-          ease: "easeInOut",
-          times: [0, 0.2, 0.5, 0.8, 1],
-        }}
-        whileHover={{ scale: [null, 1.2, 1.1] }}
-      >
+      <h1>
         Some <span>Projects</span> I've Built
-      </motion.h1>
+      </h1>
 
       <div>
         {/* Project 1 */}

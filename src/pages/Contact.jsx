@@ -12,6 +12,27 @@ import { IoIosMail, IoMdMail } from "react-icons/io";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
 
 const Contact = () => {
+  const options = {
+    initial: {
+      y: "-100%",
+      opacity: 0,
+    },
+    whileInView: {
+      y: 0,
+      opacity: 1,
+    },
+  };
+
+  const contactForm = {
+    initial: {
+      x: "-20%",
+      opacity: 0,
+    },
+    whileInView: {
+      x: 0,
+      opacity: 1,
+    },
+  };
   const form = useRef();
 
   const [name, setName] = useState("");
@@ -47,15 +68,13 @@ const Contact = () => {
     <>
       <section id="contact">
         <motion.h1
+          {...options}
           animate={{
-            borderRadius: ["50%", "0%", "50%", "0%", "50%"],
+            borderRadius: ["50%"],
           }}
           transition={{
-            duration: 3,
-            repeat: Infinity,
-            repeatDelay: 2,
+            delay: 0.2,
           }}
-          whileHover={{ scale: [null, 1.2, 1.1] }}
         >
           Contact <span>Info</span>
         </motion.h1>
@@ -122,7 +141,11 @@ const Contact = () => {
                   Name <span>*</span>
                 </label>
                 <br />
-                <input
+                <motion.input
+                  {...contactForm}
+                  transition={{
+                    delay: 0.1,
+                  }}
                   type="text"
                   name="user_name"
                   placeholder="Name"
@@ -135,7 +158,11 @@ const Contact = () => {
                   Email <span>*</span>
                 </label>
                 <br />
-                <input
+                <motion.input
+                  {...contactForm}
+                  transition={{
+                    delay: 0.2,
+                  }}
                   type="email"
                   name="user_email"
                   placeholder="Email"
@@ -148,14 +175,22 @@ const Contact = () => {
                   Message <span>*</span>
                 </label>
                 <br />
-                <textarea
+                <motion.textarea
+                  {...contactForm}
+                  transition={{
+                    delay: 0.3,
+                  }}
                   name="message"
                   placeholder="Message"
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                 />
                 <br />
-                <input
+                <motion.input
+                  {...contactForm}
+                  transition={{
+                    delay: 0.4,
+                  }}
                   className="send_button"
                   type="submit"
                   value="Send"

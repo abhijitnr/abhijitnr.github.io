@@ -63,18 +63,38 @@ const Skills = () => {
     { tool: git, name: "Git" },
   ];
 
+  const options = {
+    initial: {
+      y: "-100%",
+      opacity: 0,
+    },
+    whileInView: {
+      y: 0,
+      opacity: 1,
+    },
+  };
+
+  const stacksAndTools = {
+    initial: {
+      y: "20%",
+      opacity: 0,
+    },
+    whileInView: {
+      y: 0,
+      opacity: 1,
+    },
+  };
+
   return (
     <section id="skills">
       <motion.h1
+        {...options}
         animate={{
-          borderRadius: ["50%", "0%", "50%", "0%", "50%"],
+          borderRadius: ["50%"],
         }}
         transition={{
-          duration: 3,
-          repeat: Infinity,
-          repeatDelay: 2,
+          delay: 0.2,
         }}
-        whileHover={{ scale: [null, 1.2, 1.1] }}
       >
         Skills <span>& Tools</span>
       </motion.h1>
@@ -92,8 +112,9 @@ const Skills = () => {
       <section>
         {technicalSkills.map((item) => (
           <motion.div
+            {...stacksAndTools}
             whileHover={{ scale: [null, 0.8, 0.9] }}
-            transition={{ duration: 0.3 }}
+            transition={{ duration: 0.3, delay: 0.3 }}
           >
             <img src={item.tech} alt={item.name} />
             <span>{item.name}</span>
@@ -114,8 +135,9 @@ const Skills = () => {
       <section>
         {softSkills.map((item) => (
           <motion.div
+            {...stacksAndTools}
             whileHover={{ scale: [null, 0.8, 0.9] }}
-            transition={{ duration: 0.3 }}
+            transition={{ duration: 0.3, delay: 0.3 }}
           >
             <img src={item.soft} alt={item.name} />
             <span>{item.name}</span>
@@ -136,8 +158,9 @@ const Skills = () => {
       <section>
         {tools.map((item) => (
           <motion.div
+            {...stacksAndTools}
             whileHover={{ scale: [null, 0.8, 0.9] }}
-            transition={{ duration: 0.3 }}
+            transition={{ duration: 0.3, delay: 0.3 }}
           >
             <img src={item.tool} alt={item.name} />
             <span>{item.name}</span>

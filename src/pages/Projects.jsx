@@ -46,18 +46,27 @@ const Projects = () => {
   const project_three = [t1, t2, t3, t1, t2, t3];
   const project_four = [tg1, tg2, tg3, tg1, tg2, tg3];
 
+  const options = {
+    initial: {
+      y: "-100%",
+      opacity: 0,
+    },
+    whileInView: {
+      y: 0,
+      opacity: 1,
+    },
+  };
+
   return (
     <section id="projects">
       <motion.h1
+        {...options}
         animate={{
-          borderRadius: ["50%", "0%", "50%", "0%", "50%"],
+          borderRadius: ["50%"],
         }}
         transition={{
-          duration: 3,
-          repeat: Infinity,
-          repeatDelay: 2,
+          delay: 0.2,
         }}
-        whileHover={{ scale: [null, 1.2, 1.1] }}
       >
         Some <span>Projects</span> I've Built
       </motion.h1>
@@ -65,8 +74,17 @@ const Projects = () => {
       <div>
         {/* Project 1 */}
         <motion.div
-          whileHover={{ scale: [null, 0.9, 0.8] }}
-          transition={{ duration: 0.3 }}
+          initial={{
+            x: "-30%",
+            opacity: 0,
+          }}
+          whileInView={{
+            x: 0,
+            opacity: 1,
+          }}
+          transition={{
+            delay: 0.1,
+          }}
         >
           {/* Images */}
           <div>
@@ -107,30 +125,43 @@ const Projects = () => {
             </p>
 
             <div>
-              <a
+              <motion.a
+                whileHover={{ scale: [null, 1.2, 1.1] }}
+                transition={{ duration: 0.3 }}
                 href="https://github.com/abhijitnr/beautybebo.com-clone-MERN"
                 target="_blank"
                 rel="noreferrer"
               >
                 <BsGithub />
                 GitHub
-              </a>
-              <a
+              </motion.a>
+              <motion.a
+                whileHover={{ scale: [null, 1.2, 1.1] }}
+                transition={{ duration: 0.3 }}
                 href="https://prettyinpink.netlify.app/"
                 target="_blank"
                 rel="noreferrer"
               >
                 <BsEyeFill />
                 Live
-              </a>
+              </motion.a>
             </div>
           </div>
         </motion.div>
 
         {/* Project 2 */}
         <motion.div
-          whileHover={{ scale: [null, 0.9, 0.8] }}
-          transition={{ duration: 0.3 }}
+          initial={{
+            x: "30%",
+            opacity: 0,
+          }}
+          whileInView={{
+            x: 0,
+            opacity: 1,
+          }}
+          transition={{
+            delay: 0.3,
+          }}
         >
           {/* Images */}
           <div>
@@ -169,30 +200,43 @@ const Projects = () => {
             </p>
 
             <div>
-              <a
+              <motion.a
+                whileHover={{ scale: [null, 1.2, 1.1] }}
+                transition={{ duration: 0.3 }}
                 href="https://github.com/abhijitnr/SSENCE-Clone"
                 target="_blank"
                 rel="noreferrer"
               >
                 <BsGithub />
                 GitHub
-              </a>
-              <a
+              </motion.a>
+              <motion.a
+                whileHover={{ scale: [null, 1.2, 1.1] }}
+                transition={{ duration: 0.3 }}
                 href="https://ssense-clones.netlify.app/"
                 target="_blank"
                 rel="noreferrer"
               >
                 <BsEyeFill />
                 Live
-              </a>
+              </motion.a>
             </div>
           </div>
         </motion.div>
 
         {/* Peoject 3 */}
         <motion.div
-          whileHover={{ scale: [null, 0.9, 0.8] }}
-          transition={{ duration: 0.3 }}
+          initial={{
+            x: "-30%",
+            opacity: 0,
+          }}
+          whileInView={{
+            x: 0,
+            opacity: 1,
+          }}
+          transition={{
+            delay: 0.1,
+          }}
         >
           {/* Images */}
           <div>
@@ -225,30 +269,43 @@ const Projects = () => {
             <p>An individual project was completed in 2 days.</p>
 
             <div>
-              <a
+              <motion.a
+                whileHover={{ scale: [null, 1.2, 1.1] }}
+                transition={{ duration: 0.3 }}
                 href="https://github.com/abhijitnr/MERN-STACK-TODO-APP"
                 target="_blank"
                 rel="noreferrer"
               >
                 <BsGithub />
                 GitHub
-              </a>
-              <a
+              </motion.a>
+              <motion.a
+                whileHover={{ scale: [null, 1.2, 1.1] }}
+                transition={{ duration: 0.3 }}
                 href="https://abhijit-fullstack-todo-app.netlify.app/"
                 target="_blank"
                 rel="noreferrer"
               >
                 <BsEyeFill />
                 Live
-              </a>
+              </motion.a>
             </div>
           </div>
         </motion.div>
 
         {/* Project 4 */}
         <motion.div
-          whileHover={{ scale: [null, 0.9, 0.8] }}
-          transition={{ duration: 0.3 }}
+          initial={{
+            x: "30%",
+            opacity: 0,
+          }}
+          whileInView={{
+            x: 0,
+            opacity: 1,
+          }}
+          transition={{
+            delay: 0.3,
+          }}
         >
           {/* Images */}
           <div>
@@ -287,22 +344,26 @@ const Projects = () => {
             </p>
 
             <div>
-              <a
+              <motion.a
+                whileHover={{ scale: [null, 1.2, 1.1] }}
+                transition={{ duration: 0.3 }}
                 href="https://github.com/abhijitnr/Toggl.com-Track-Clone"
                 target="_blank"
                 rel="noreferrer"
               >
                 <BsGithub />
                 GitHub
-              </a>
-              <a
+              </motion.a>
+              <motion.a
+                whileHover={{ scale: [null, 1.2, 1.1] }}
+                transition={{ duration: 0.3 }}
                 href="https://toggl-track-by-gas-face-3608.netlify.app/"
                 target="_blank"
                 rel="noreferrer"
               >
                 <BsEyeFill />
                 Live
-              </a>
+              </motion.a>
             </div>
           </div>
         </motion.div>

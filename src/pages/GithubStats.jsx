@@ -2,18 +2,26 @@ import GitHubCalendar from "react-github-calendar";
 import { motion } from "framer-motion";
 
 const GithubStats = () => {
+  const options = {
+    initial: {
+      y: "-100%",
+      opacity: 0,
+    },
+    whileInView: {
+      y: 0,
+      opacity: 1,
+    },
+  };
   return (
     <section id="github-stats">
       <motion.h1
+        {...options}
         animate={{
-          borderRadius: ["50%", "0%", "50%", "0%", "50%"],
+          borderRadius: ["50%"],
         }}
         transition={{
-          duration: 3,
-          repeat: Infinity,
-          repeatDelay: 2,
+          delay: 0.2,
         }}
-        whileHover={{ scale: [null, 1.2, 1.1] }}
       >
         GitHub <span>Stats</span>
       </motion.h1>
@@ -30,8 +38,17 @@ const GithubStats = () => {
       <div id="stats">
         <div>
           <motion.img
-            whileHover={{ scale: [null, 1.2, 1.1] }}
-            transition={{ duration: 0.3 }}
+            initial={{
+              x: "-30%",
+              opacity: 0,
+            }}
+            whileInView={{
+              x: 0,
+              opacity: 1,
+            }}
+            transition={{
+              delay: 0.2,
+            }}
             src="https://github-readme-stats.vercel.app/api?username=abhijitnr&show_icons=true&count_private=true&theme=chartreuse-dark&hide_border=true&bg_color=0D1117"
             alt="GitHUb Stats"
           />
@@ -39,8 +56,17 @@ const GithubStats = () => {
 
         <div>
           <motion.img
-            whileHover={{ scale: [null, 1.2, 1.1] }}
-            transition={{ duration: 0.3 }}
+            initial={{
+              x: "30%",
+              opacity: 0,
+            }}
+            whileInView={{
+              x: 0,
+              opacity: 1,
+            }}
+            transition={{
+              delay: 0.2,
+            }}
             src="https://streak-stats.demolab.com/?user=abhijitnr&theme=chartreuse-dark"
             alt="GitHUb Streak"
           />

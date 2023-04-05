@@ -8,28 +8,33 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { IoMdMail } from "react-icons/io";
 
 const Home = () => {
+  const options = {
+    initial: {
+      x: "-100%",
+      opacity: 0,
+    },
+    whileInView: {
+      x: 0,
+      opacity: 1,
+    },
+  };
+
   return (
     <section id="home">
       {/* Info */}
       <div>
         <motion.span
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
+          {...options}
           transition={{
-            duration: 1,
-            delay: 0.5,
-            ease: [0, 0.71, 0.2, 1.01],
+            delay: 0.1,
           }}
         >
           Hey, I am
         </motion.span>
         <motion.span
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
+          {...options}
           transition={{
-            duration: 1,
-            delay: 0.5,
-            ease: [0, 0.71, 0.2, 1.01],
+            delay: 0.2,
           }}
         >
           Abhijit Biswas
@@ -53,8 +58,9 @@ const Home = () => {
           {/* Resume Download Button */}
           <a href="Abhijit_Biswas_Resume.pdf" download>
             <motion.button
+              {...options}
               whileHover={{ scale: [null, 1.2, 1.1] }}
-              transition={{ duration: 0.3 }}
+              transition={{ duration: 0.3, delay: 0.1 }}
             >
               Resume <FiDownload />
             </motion.button>

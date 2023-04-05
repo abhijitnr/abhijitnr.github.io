@@ -1,18 +1,27 @@
 import { motion } from "framer-motion";
 
 const About = () => {
+  const options = {
+    initial: {
+      y: "-100%",
+      opacity: 0,
+    },
+    whileInView: {
+      y: 0,
+      opacity: 1,
+    },
+  };
+
   return (
     <section id="about-me">
       <motion.h1
+        {...options}
         animate={{
-          borderRadius: ["50%", "0%", "50%", "0%", "50%"],
+          borderRadius: ["50%"],
         }}
         transition={{
-          duration: 3,
-          repeat: Infinity,
-          repeatDelay: 2,
+          delay: 0.2,
         }}
-        whileHover={{ scale: [null, 1.2, 1.1] }}
       >
         About <span>Me</span>
       </motion.h1>
@@ -23,7 +32,19 @@ const About = () => {
         >
           Hi, I am <span>Abhijit Biswas</span>
         </motion.h5>
-        <p>
+        <motion.p
+          initial={{
+            x: "-100%",
+            opacity: 0,
+          }}
+          whileInView={{
+            x: 0,
+            opacity: 1,
+          }}
+          transition={{
+            delay: 0.1,
+          }}
+        >
           As an aspiring <span>full stack web developer</span>, I am highly
           motivated and passionate about creating web applications using a wide
           range of tools in the MERN stack. I possess in-depth knowledge of both
@@ -32,33 +53,69 @@ const About = () => {
           at <span> Masai School</span>, I am eager to secure a job in a
           <span> technology-driven organization</span> that values both my
           skills and my desire to learn and grow.
-        </p>
+        </motion.p>
 
-        <p>
+        <motion.p
+          initial={{
+            x: "100%",
+            opacity: 0,
+          }}
+          whileInView={{
+            x: 0,
+            opacity: 1,
+          }}
+          transition={{
+            delay: 0.3,
+          }}
+        >
           My experience and expertise in <span>MERN</span> stack development
           have equipped me with the necessary skills to tackle
           <span> complex</span> coding challenges and build
           <span> scalable</span> web applications. As a result, I am
           <span> confident</span> in my ability to contribute to any project and
           to learn <span>new technologies</span> quickly.
-        </p>
+        </motion.p>
 
-        <p>
+        <motion.p
+          initial={{
+            x: "-100%",
+            opacity: 0,
+          }}
+          whileInView={{
+            x: 0,
+            opacity: 1,
+          }}
+          transition={{
+            delay: 0.1,
+          }}
+        >
           In addition to my technical skills, I am also a
           <span> team player</span> who is able to collaborate effectively with
           others to achieve shared goals. I am committed to
           <span> continuous</span> learning and <span>improvement</span> and am
           eager to work in an environment that supports and
           <span> encourages professional</span> development.
-        </p>
+        </motion.p>
 
-        <p>
+        <motion.p
+          initial={{
+            x: "100%",
+            opacity: 0,
+          }}
+          whileInView={{
+            x: 0,
+            opacity: 1,
+          }}
+          transition={{
+            delay: 0.3,
+          }}
+        >
           Overall, I am <span>seeking</span> a <span>challenging</span> and
           rewarding role in a company that will allow me to leverage my skills
           and knowledge to build <span>innovative</span> web applications while
           also providing <span>opportunities</span> for personal and
           professional growth.
-        </p>
+        </motion.p>
       </div>
     </section>
   );

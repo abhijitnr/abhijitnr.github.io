@@ -45,22 +45,22 @@ https://abhijitnr.github.io/
 
 ### About
 
-![About](./src/assets/readme/about.png)
+![About](https://raw.githubusercontent.com/abhijitnr/abhijitnr.github.io/master/src/assets/readme/about.png)
 
 ### GitHub Stats
 
-![GitHub](./src/assets/readme/github_stats.png)
+![GitHub](https://raw.githubusercontent.com/abhijitnr/abhijitnr.github.io/master/src/assets/readme/github_stats.png)
 
 ### Technical skills, soft skills and tools
 
-![Skills](./src/assets/readme/skill_teck.png)
+![Skills](https://raw.githubusercontent.com/abhijitnr/abhijitnr.github.io/master/src/assets/readme/skill_teck.png)
 
-![Skills](./src/assets/readme/skill_soft.png)
+![Skills](https://raw.githubusercontent.com/abhijitnr/abhijitnr.github.io/master/src/assets/readme/skill_soft.png)
 
 ### Projects
 
-![Projects](./src/assets/readme/projects.png)
+![Projects](https://raw.githubusercontent.com/abhijitnr/abhijitnr.github.io/master/src/assets/readme/projects.png)
 
 ### Contact
 
-![Contact](./src/assets/readme/contact.png)
+![Contact](https://raw.githubusercontent.com/abhijitnr/abhijitnr.github.io/master/src/assets/readme/contact.png)

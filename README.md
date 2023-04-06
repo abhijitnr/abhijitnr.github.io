@@ -19,6 +19,7 @@ https://abhijitnr.github.io/
 - In the "Projects" section, I have added four projects that I built both individually and with a team.
 - In the "Contact" section, I have included my phone number and email address. Additionally, you can also reach out to me directly through the provided social media links or by using the contact form.
 - My portfolio is designed to be responsive on all screen sizes.
+- In my portfolio I also used animation using `framer-motion`.
 
 ## Tech stacks and libraries
 
@@ -36,6 +37,8 @@ https://abhijitnr.github.io/
 - @emotion/styled
 - @mui/icons-material
 - @mui/material
+- framer-motion
+- react-spinners
 
 ## Overview of my portfolio
 
@@ -64,3 +67,6 @@ https://abhijitnr.github.io/
 ### Contact
 
 ![Contact](./src/assets/readme/contact.png)
+
+
+<h2 align="center">Thank you for visiting my portfolio. 😊😊</h2>

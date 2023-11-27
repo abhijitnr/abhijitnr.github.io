@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Education from "./pages/Education";
+import Experiences from "./pages/Experiences";
 import GithubStats from "./pages/GithubStats";
 import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
@@ -16,6 +17,7 @@ import "./styles/navbar.scss";
 import "./styles/home.scss";
 import "./styles/about.scss";
 import "./styles/education.scss";
+import "./styles/experiences.scss";
 import "./styles/githubstats.scss";
 import "./styles/skills.scss";
 import "./styles/projects.scss";
@@ -65,6 +67,7 @@ const App = () => {
           <Home />
           <About />
           <Education />
+          <Experiences />
           <GithubStats />
           <Skills />
           <Projects />

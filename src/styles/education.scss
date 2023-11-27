@@ -1,0 +1,100 @@
+@import "colors";
+
+#education {
+  width: 100%;
+  height: auto;
+  padding: 80px 0 30px 0;
+  background-color: $black;
+
+  > h1 {
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    color: $red;
+    font-size: 50px;
+    font-weight: 500;
+    padding-bottom: 2px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    width: fit-content;
+    text-align: center;
+
+    > span {
+      color: $white;
+    }
+  }
+
+  > div {
+    width: 50%;
+    margin: auto;
+    text-align: left;
+    margin-top: 50px;
+
+    > h6 {
+      font-size: 30px;
+      margin: 0;
+      border: 0;
+      color: $white;
+      font-weight: 500;
+      display: flex;
+      justify-self: self-start;
+      align-items: center;
+      gap: 10px;
+    }
+
+    > p {
+      font-size: 20px;
+      color: $white;
+      display: flex;
+      justify-self: self-start;
+      align-items: center;
+      gap: 10px;
+      margin-left: 10%;
+    }
+  }
+}
+
+@media screen and (max-width: 769px) {
+  #education {
+    height: auto;
+    padding: 90px 0 30px 0;
+
+    > div {
+      width: 90%;
+
+      > h6 {
+        font-size: 30px;
+      }
+
+      > p {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 426px) {
+  #education {
+    > h1 {
+      font-size: 40px;
+    }
+
+    > div > h6 {
+      font-size: 25px;
+
+      > svg {
+        font-size: 35px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 321px) {
+  #education > div {
+    width: 92%;
+
+    > p {
+      font-size: 16px;
+    }
+  }
+}

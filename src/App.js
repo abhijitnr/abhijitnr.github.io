@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Education from "./pages/Education";
 import GithubStats from "./pages/GithubStats";
 import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
@@ -14,6 +15,7 @@ import Contact from "./pages/Contact";
 import "./styles/navbar.scss";
 import "./styles/home.scss";
 import "./styles/about.scss";
+import "./styles/education.scss";
 import "./styles/githubstats.scss";
 import "./styles/skills.scss";
 import "./styles/projects.scss";
@@ -47,7 +49,7 @@ const App = () => {
     <>
       {loading && loading ? (
         <div className="preloader">
-          <motion.h1 {...options}>Welcome to my portfolio</motion.h1>
+          <motion.h1 {...options}>Welcome to Abhijit's portfolio</motion.h1>
           <RingLoader
             size="150px"
             color="rgb(35, 176, 192)"
@@ -62,6 +64,7 @@ const App = () => {
           {/* Pages */}
           <Home />
           <About />
+          <Education />
           <GithubStats />
           <Skills />
           <Projects />
